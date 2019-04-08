@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-
+<?php
+require_once('connect.php');
+?>
 <html>
 
 <head>
