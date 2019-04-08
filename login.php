@@ -49,6 +49,7 @@
         <div class="mx-auto col-md-12 col-10 bg-white p-1">
           <h1 class="lead">Log In</h1>
           <br>
+          <h1><?php echo "5555555555555555555555555"?></h1>
 <?php
 $q = 'SELECT * FROM `studied-bounty-235113.traintick.users`WHERE Email="wichapol@gmail.com" ';
 $count=0;
@@ -57,11 +58,12 @@ $job = $bigQuery->startQuery($queryJobConfig);
 $queryResults = $job->$queryResults();
 if ($queryResults->isComplete()){
   foreach ($queryResults as $row){
-
     ?>
+
+  
     <h1><?php echo $row['First_Name']?></h1>
-    <h1><?php echo "5555555555555555555555555"?></h1>
-    <?php
+    
+<?php
 
   }
 }
